@@ -27,7 +27,7 @@ Reads a temperature input and controls fan behavior accordingly. Supports:
 - Added setpoint control mode with diff-based fan scaling
 - Currently implementing **hysteresis** to stop rapid on/off cycling near a threshold
 
-Full write-up with the reasoning behind each change: see [DEVLOG.md](./DEVLOG.md), or the [devlog page on my portfolio site](#).
+Full write-up with the reasoning behind each change lives on the [devlog page of my portfolio site](#) (link coming soon).
 
 ## Roadmap
 - [ ] Hysteresis — in progress
@@ -49,5 +49,9 @@ gcc fan_controller.c -o fan_controller
 ./fan_controller
 ```
 
+## Comparing Stage 1 vs. current
+
+The original Stage 1 version (simple ON/OFF logic, before the rebuild described above) is preserved as-is in [`archive/fan_controller_stage1.c`](./archive/fan_controller_stage1.c), so the before/after described in this README can be checked directly against real code.
+
 ---
-*Part of my embedded systems / IoT portfolio, built while completing SIWES training in Computer Engineering.*
+*Part of my embedded systems / IoT portfolio, built while completing SIWES training in Computer Engineering.*in Computer Engineering.*
